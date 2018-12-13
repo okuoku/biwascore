@@ -23,6 +23,7 @@ module.exports = function(BiwaScheme){
     var assert_pair = bs.assert_pair;
     var assert_integer = bs.assert_integer;
     var assert_between = bs.assert_between;
+    var assert_date = bs.assert_date;
     var array_to_list = bs.array_to_list;
     var deep_array_to_list = bs.deep_array_to_list;
     var to_write_ss = bs.to_write_ss;
