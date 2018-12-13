@@ -1,6 +1,6 @@
 {
   "name": "@yuniscm/biwascore",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "./biwascore_module.js",
   "license": "MIT",
   "dependencies": {
