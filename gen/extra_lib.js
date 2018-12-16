@@ -46,6 +46,7 @@ module.exports = function(BiwaScheme){
     var TopEnv = bs.TopEnv;
     var CoreEnv = bs.CoreEnv;
     var Interpreter = bs.Interpreter;
+    var Values = bs.Values;
     var Bug = bs.Bug;
 
 
