@@ -92,7 +92,7 @@ module.exports = function(BiwaScheme){
       return copy_pair(ar[0]);
     }
     else{
-      return BiwaScheme.nil;
+      return ar[0];
     }
   });
 
@@ -397,7 +397,7 @@ module.exports = function(BiwaScheme){
   //
   // srfi-43 (vector library)
   //
-  define_libfunc("vector-append", 2, null, function(ar){
+  define_libfunc("vector-append", 1, null, function(ar){
     var vec = [];
     return vec.concat.apply(vec, ar);
   });
