@@ -48,6 +48,7 @@ module.exports = function(BiwaScheme){
     var Interpreter = bs.Interpreter;
     var Values = bs.Values;
     var Bug = bs.Bug;
+    var eof = bs.eof;
 
 //
 // R6RS Base library
