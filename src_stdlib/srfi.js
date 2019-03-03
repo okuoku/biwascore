@@ -344,7 +344,7 @@
   //
   // srfi-43 (vector library)
   //
-  define_libfunc("vector-append", 2, null, function(ar){
+  define_libfunc("vector-append", 1, null, function(ar){
     var vec = [];
     return vec.concat.apply(vec, ar);
   });
