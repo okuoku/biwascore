@@ -39,7 +39,7 @@
       return copy_pair(ar[0]);
     }
     else{
-      return BiwaScheme.nil;
+      return ar[0];
     }
   });
 
