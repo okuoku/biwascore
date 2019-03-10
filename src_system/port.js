@@ -42,9 +42,15 @@ BiwaScheme.Port.StringOutput = BiwaScheme.Class.extend(new BiwaScheme.Port(false
 BiwaScheme.Port.StringInput = BiwaScheme.Class.extend(new BiwaScheme.Port(true, false), {
   initialize: function(str){
     this.str = str;
+    this.is_eof = false;
   },
   get_string: function(after){
-    return after(this.str);
+    if (this.is_eof) {
+        return after(BiwaScheme.eof);
+    }else{
+        this.is_eof = true;
+        return after(this.str);
+    }
   }
 });
 
